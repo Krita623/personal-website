@@ -27,7 +27,8 @@
 - [TypeScript](https://www.typescriptlang.org/) - 类型安全
 - [TailwindCSS](https://tailwindcss.com/) - 样式设计
 - [Framer Motion](https://www.framer.com/motion/) - 动画效果
-- [MongoDB](https://www.mongodb.com/) - 数据库
+- [MySQL](https://www.mysql.com/) - 数据库
+- [Sequelize](https://sequelize.org/) - ORM工具
 - [NextAuth.js](https://next-auth.js.org/) - 认证系统
 - [React Icons](https://react-icons.github.io/react-icons/) - 图标库
 
@@ -50,8 +51,12 @@ npm run dev
 创建一个.env.local文件，包含以下内容：
 
 ```
-# MongoDB连接字符串
-MONGODB_URI=mongodb+srv://yourusername:yourpassword@yourcluster.mongodb.net/personal-website?retryWrites=true&w=majority
+# MySQL数据库配置
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_DATABASE=personal_website
+MYSQL_USER=root
+MYSQL_PASSWORD=your_password
 
 # NextAuth.js密钥
 NEXTAUTH_SECRET=your-nextauth-secret-key-here
