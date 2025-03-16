@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 30, 41, 59;
+  --background-rgb: 248, 250, 252;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.section-padding {
+  @apply py-20 px-4 md:px-8 lg:px-16;
+}
+
+.heading {
+  @apply text-3xl md:text-4xl font-bold mb-8;
+}
+
+.subheading {
+  @apply text-xl md:text-2xl font-semibold mb-4;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+}
+
+.btn {
+  @apply px-6 py-2 rounded-md transition-colors duration-300;
+}
+
+.btn-primary {
+  @apply btn bg-primary text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply btn bg-transparent border border-primary text-primary hover:bg-primary/10;
+} 
